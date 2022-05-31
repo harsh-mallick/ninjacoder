@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="flex flex-row">
+        <nav class="flex flex-col justify-center border-solid border-r-2 border-black pr-3" style="height: 681.5px;">
+            <ul class="flex flex-col ml-5 font-bold text-lg justify-center mt-5 ">
+                <li class="self-start">Ninja Coder</li>
+            </ul>
+            <ul class="flex flex-col ml-5 font-bold text-lg justify-center" style="height: 681.5px;">
+                <li class="cursor-pointer" onclick="link()">
+                    Add Link
+                </li>
+                <hr>
+                <li class="cursor-pointer" onclick="image()">
+                    Add Image
+                </li>
+                <hr>
+                <li class="cursor-pointer" onclick="table()">
+                    Make Table
+                </li>
+                <hr>
+                <li class="cursor-pointer" onclick="css()">
+                    Add CSS
+                </li>
+                <hr>
+                <li class="cursor-pointer" onclick="favicon()">
+                    Add Favicon
+                </li>
+                <hr>
+                <li class="cursor-pointer" onclick="classs()">
+                    Class
+                </li>
+                <hr>
+                <li class="cursor-pointer" onclick="ids()">
+                    Id
+                </li>
+            </ul>
+        </nav>
+        <div class="content ml-10">
+            <iframe src="./HTML Links Hyperlinks.html" frameborder="0" height="681.5px" width="1350px" id="iframe"></iframe>
+        </div>
+    </div>
+</body>
+<script>
+    function link(){
+        document.getElementById("iframe").src = "./HTML Links Hyperlinks.html"
+    }
+    function css(){
+        document.getElementById("iframe").src = "./HTML Styles CSS.html"
+    }
+    function table(){
+        document.getElementById("iframe").src = "./HTML Tables.html"
+    }
+    function favicon(){
+        document.getElementById("iframe").src = "./HTML Favicon.html"
+    }
+    function classs(){
+        document.getElementById("iframe").src = "./HTML Classes.html"
+    }
+    function ids(){
+        document.getElementById("iframe").src = "./HTML - The id attribute.html"
+    }
+    function image(){
+        document.getElementById("iframe").src = "./HTML Images.html"
+    }
+</script>
+
+</html>

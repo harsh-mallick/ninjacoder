@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>HTML Tables</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Keywords"
+    content="HTML, Python, CSS, SQL, JavaScript, How to, PHP, Java, C, C++, C#, jQuery, Bootstrap, Colors, W3.CSS, XML, MySQL, Icons, NodeJS, React, Graphics, Angular, R, AI, Git, Data Science, Code Game, Tutorials, Programming, Web Development, Training, Learning, Quiz, Exercises, Courses, Lessons, References, Examples, Learn to code, Source code, Demos, Tips, Website">
+  <meta name="Description"
+    content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.">
+  <meta property="og:image" content="https://www.w3schools.com/images/w3schools_logo_436_2.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="436">
+  <meta property="og:image:height" content="228">
+  <meta property="og:description"
+    content="W3Schools offers free online tutorials, references and exercises in all the major languages of the web. Covering popular subjects like HTML, CSS, JavaScript, Python, SQL, Java, and many, many more.">
+  <link rel="icon" href="https://www.w3schools.com/favicon.ico" type="image/x-icon">
+  <link rel="preload" href="https://www.w3schools.com/lib/fonts/fontawesome.woff2?14663396" as="font" type="font/woff2"
+    crossorigin="">
+  <link rel="preload" href="https://www.w3schools.com/lib/fonts/source-code-pro-v14-latin-regular.woff2" as="font"
+    type="font/woff2" crossorigin="">
+  <link rel="preload" href="https://www.w3schools.com/lib/fonts/roboto-mono-v13-latin-500.woff2" as="font"
+    type="font/woff2" crossorigin="">
+  <link rel="preload" href="https://www.w3schools.com/lib/fonts/source-sans-pro-v14-latin-700.woff2" as="font"
+    type="font/woff2" crossorigin="">
+  <link rel="preload" href="https://www.w3schools.com/lib/fonts/source-sans-pro-v14-latin-600.woff2" as="font"
+    type="font/woff2" crossorigin="">
+  <link rel="preload" href="https://www.w3schools.com/lib/fonts/freckle-face-v9-latin-regular.woff2" as="font"
+    type="font/woff2" crossorigin="">
+  <link rel="stylesheet" href="HTML%20Tables_files/w3schools30.css">
+  <style>
+    table#customers {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    #customers td,
+    #customers th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    .tryiticon {
+      background-color: #4CAF50;
+      color: #fff !important;
+      text-decoration: none;
+      padding: 0 8px 4px 8px;
+      border-radius: 50px;
+      font-size: 15px;
+      position: absolute;
+      margin-left: 6px;
+      transition: padding 0.2s;
+
+    }
+
+    .tryiticon span {
+      color: #fff !important;
+      font-size: 14px;
+      font-weight: normal;
+      position: absolute;
+      width: 0px;
+      overflow: hidden;
+      transition: width 0.2;
+    }
+
+    .tryiticon:hover {
+      padding: 0 12px 4px 116px;
+    }
+
+    .tryiticon:hover span {
+      width: 116px;
+      padding-top: 2px;
+      left: 10px;
+    }
+
+    .htmltut_table,
+    .htmltut_table th,
+    .htmltut_table td {
+      border: 1px solid black;
+    }
+
+    .htmltut_table1,
+    .htmltut_table1 th,
+    .htmltut_table1 td {
+      border: 1px solid black;
+    }
+
+    .htmltut_table1 th,
+    .htmltut_table1 td {
+      padding: 5px;
+    }
+  </style>
+
+<body data-new-gr-c-s-check-loaded="8.899.0" data-gr-ext-installed="">
+  <style>
+    #darkmodemenu {
+      position: absolute;
+      top: -40px;
+      right: 16px;
+      padding: 5px 20px 10px 18px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      z-index: -1;
+      transition: top 0.2s;
+      user-select: none;
+    }
+
+    #darkmodemenu input,
+    #darkmodemenu label {
+      cursor: pointer;
+    }
+  </style>
+  <div id="pagetop" class="w3-bar w3-card-2 notranslate">
+
+
+    <style>
+      @media screen and (max-width: 1080px) {
+        .ws-hide-1080 {
+          ddddisplay: none !important;
+        }
+      }
+
+      @media screen and (max-width: 1160px) {
+        .topnavmain_video {
+          display: none !important;
+        }
+      }
+    </style>
+
+    <h1>HTML <span class="color_h1">Tables</span></h1>
+
+    <hr>
+    <p class="intro">HTML tables allow web developers to arrange data into rows and
+      columns.</p>
+    <hr>
+
+    <div class="w3-example">
+      <h3>Example</h3>
+      <div class="w3-white w3-padding notranslate w3-padding-16">
+        <table class="ws-table-all" id="customers">
+          <tbody>
+            <tr>
+              <th>Company</th>
+              <th>Contact</th>
+              <th>Country</th>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>Centro comercial Moctezuma</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+            </tr>
+            <tr>
+              <td>Ernst Handel</td>
+              <td>Roland Mendel</td>
+              <td>Austria</td>
+            </tr>
+            <tr>
+              <td>Island Trading</td>
+              <td>Helen Bennett</td>
+              <td>UK</td>
+            </tr>
+            <tr>
+              <td>Laughing Bacchus Winecellars</td>
+              <td>Yoshi Tannamuri</td>
+              <td>Canada</td>
+            </tr>
+            <tr>
+              <td>Magazzini Alimentari Riuniti</td>
+              <td>Giovanni Rovelli</td>
+              <td>Italy</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <a class="w3-btn w3-margin-top w3-margin-bottom"
+        href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_intro" target="_blank">Try it Yourself
+        »</a>
+    </div>
+    <hr>
+
+    <h2>Define an HTML Table</h2>
+    <p>A table in HTML consists of table cells inside rows and columns</p>
+    <div class="w3-example">
+      <h3>Example</h3>
+      <p>A simple HTML table:</p>
+      <div class="w3-code notranslate htmlHigh">
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>table<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>tr<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor"
+          style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>th<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>Company<span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>
+        &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>th<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>Contact<span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor"
+          style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>th<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>Country<span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>
+        &nbsp;
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>/tr<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>tr<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>&nbsp; &nbsp; <span class="tagnamecolor"
+          style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>Alfreds Futterkiste<span class="tagnamecolor"
+          style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>
+        &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>Maria
+        Anders<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>/td<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+        <br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>Germany<span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>
+        &nbsp;
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>/tr<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>tr<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor"
+          style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>Centro
+        comercial Moctezuma<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>/td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>
+        &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>Francisco
+        Chang<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>/td<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+        <br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>Mexico<span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>
+        &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>/tr<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/table<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <h2>Table Cells</h2>
+    <p>Each table cell is defined by a
+      <code class="w3-codespan">&lt;td&gt;</code> and a <code class="w3-codespan">&lt;/td&gt;</code> tag.
+    </p>
+
+    <div class="w3-panel w3-note">
+      <p><code class="w3-codespan">td</code>
+        stands for table data.</p>
+    </div>
+
+    <p>Everything between <code class="w3-codespan">&lt;td&gt;</code> and <code class="w3-codespan">&lt;/td&gt;</code>
+      are the content of the table cell.</p>
+
+    <div class="w3-example">
+      <h3>Example</h3>
+      <div class="w3-code notranslate htmlHigh">
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>table<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>tr<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>&nbsp; &nbsp; <span class="tagnamecolor"
+          style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>Emil<span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>
+        &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>Tobias<span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor"
+          style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>Linus<span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>
+        &nbsp;
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>/tr<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/table<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>
+      </div>
+
+    </div>
+
+    <div class="w3-panel w3-note">
+      <p><strong>Note:</strong> table data elements are the data containers of the table.<br>They can contain
+        all sorts of HTML elements; text, images, lists, other tables, etc.</p>
+    </div>
+
+    <hr>
+    <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+      <!-- MidContent -->
+      <!-- <p class="adtext">Advertisement</p> -->
+
+      <div id="div-gpt-ad-1493883843099-0" style="" data-google-query-id="CIvNpbbQh_gCFXoAtwAd0e8IUw">
+
+        <div id="sn_ad_label_div-gpt-ad-1493883843099-0" class="sn_ad_label"
+          style="color:#000000;font-size:12px;margin:0;text-align:center;">ADVERTISEMENT</div>
+        <div id="google_ads_iframe_/16833175/MidContent_0__container__" style="border: 0pt none;"><iframe
+            id="google_ads_iframe_/16833175/MidContent_0" name="google_ads_iframe_/16833175/MidContent_0"
+            title="3rd party ad content" scrolling="no" marginwidth="0" marginheight="0"
+            style="border: 0px none; vertical-align: bottom;" role="region" aria-label="Advertisement" tabindex="0"
+            sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+            srcdoc="" data-google-container-id="4" data-load-complete="true" width="970" height="250"
+            frameborder="0"></iframe></div>
+      </div>
+
+    </div>
+    <hr>
+
+    <h2>Table Rows</h2>
+    <p>Each table row starts with a
+      <code class="w3-codespan">&lt;tr&gt;</code> and end with a <code class="w3-codespan">&lt;/tr&gt;</code> tag.
+    </p>
+
+    <div class="w3-panel w3-note">
+      <p><code class="w3-codespan">tr</code>
+        stands for table row.</p>
+    </div>
+
+    <div class="w3-example">
+      <h3>Example</h3>
+      <div class="w3-code notranslate htmlHigh">
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>table<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>tr<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>&nbsp; &nbsp; <span class="tagnamecolor"
+          style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>Emil<span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>
+        &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>Tobias<span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor"
+          style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>Linus<span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>
+        &nbsp;
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>/tr<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>tr<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>&nbsp; &nbsp; <span class="tagnamecolor"
+          style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>16<span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>
+        &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>14<span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor"
+          style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>10<span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>
+        &nbsp;
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>/tr<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/table<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>
+      </div>
+
+    </div>
+
+    <p>You can have as many rows as you like in a table, just make sure that the number of cells are the same in each
+      row.</p>
+
+    <div class="w3-panel w3-note">
+      <p><strong>Note:</strong> There are times where a row can have less or more cells than another. You will learn
+        about that in a later chapter.</p>
+    </div>
+
+    <hr>
+
+    <h2>Table Headers</h2>
+    <p>Sometimes you want your cells to be headers, in those cases use the
+      <code class="w3-codespan">&lt;th&gt;</code> tag instead of the
+      <code class="w3-codespan">&lt;td&gt;</code> tag:
+    </p>
+
+    <div class="w3-example">
+      <h3>Example</h3>
+      <p>Let the first row be table headers:</p>
+      <div class="w3-code notranslate htmlHigh">
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>table<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>tr<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>&nbsp; &nbsp; <span class="tagnamecolor"
+          style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>th<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>Person 1<span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>
+        &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>th<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>Person 2<span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor"
+          style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>th<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>Person
+        3<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>/th<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>
+        &nbsp;
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>/tr<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>tr<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>&nbsp; &nbsp; <span class="tagnamecolor"
+          style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>Emil<span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>
+        &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>Tobias<span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor"
+          style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>Linus<span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>
+        &nbsp;
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>/tr<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>tr<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>&nbsp; &nbsp; <span class="tagnamecolor"
+          style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>16<span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>
+        &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>14<span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor"
+          style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>10<span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>
+        &nbsp;
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>/tr<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/table<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>
+      </div>
+
+    </div>
+
+    <p>By default, the text in <code class="w3-codespan">&lt;th&gt;</code> elements
+      are bold and centered, but you can change that with CSS. </p>
+
+    <br>
+    <style>
+      #moreAboutSubject,
+      #moreAboutSubject2 {
+        display: none;
+        color: #3c763d;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #dff0d8;
+        border: 1px solid #d6e9c6;
+        font-size: 14px;
+      }
+
+      #moreAboutSubject {
+        color: #444444;
+        background-color: #f1f1f1;
+        border: 1px solid #e5e5e5;
+      }
+    </style>
+
+    <div id="mypagediv2" style="position:relative;text-align:center;"></div>
+    <br>
+
+  </div>
+
+
+
+  <style>
+    .ribbon-vid {
+      font-size: 12px;
+      font-weight: bold;
+      padding: 6px 20px;
+      left: -20px;
+      top: -10px;
+      text-align: center;
+      color: black;
+      border-radius: 25px;
+    }
+  </style>
+
+  <style>
+    #courses_get_started_btn {
+      text-decoration: none !important;
+      background-color: #04AA6D;
+      width: 100%;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    #courses_get_started_btn:hover {
+      background-color: #059862 !important;
+    }
+  </style>
+  </div>
+</body>
+
+</html>

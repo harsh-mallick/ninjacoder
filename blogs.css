@@ -1,0 +1,17 @@
+.rows{
+    display: flex;
+    flex-direction: row;
+}
+*{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 681.9px;
+    padding-left: 200px;
+}

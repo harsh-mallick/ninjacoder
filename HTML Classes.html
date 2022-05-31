@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <script type="text/javascript" async=""
+    src="HTML%20Classes%20-%20The%20Class%20Attribute_files/localstore.js"></script>
+  <title>HTML Classes - The Class Attribute</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Keywords"
+    content="HTML, Python, CSS, SQL, JavaScript, How to, PHP, Java, C, C++, C#, jQuery, Bootstrap, Colors, W3.CSS, XML, MySQL, Icons, NodeJS, React, Graphics, Angular, R, AI, Git, Data Science, Code Game, Tutorials, Programming, Web Development, Training, Learning, Quiz, Exercises, Courses, Lessons, References, Examples, Learn to code, Source code, Demos, Tips, Website">
+  <meta name="Description"
+    content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.">
+  <meta property="og:image" content="https://www.w3schools.com/images/w3schools_logo_436_2.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="436">
+  <meta property="og:image:height" content="228">
+  <meta property="og:description"
+    content="W3Schools offers free online tutorials, references and exercises in all the major languages of the web. Covering popular subjects like HTML, CSS, JavaScript, Python, SQL, Java, and many, many more.">
+  <link rel="icon" href="https://www.w3schools.com/favicon.ico" type="image/x-icon">
+  <link rel="preload" href="https://www.w3schools.com/lib/fonts/fontawesome.woff2?14663396" as="font" type="font/woff2"
+    crossorigin="">
+  <link rel="preload" href="https://www.w3schools.com/lib/fonts/source-code-pro-v14-latin-regular.woff2" as="font"
+    type="font/woff2" crossorigin="">
+  <link rel="preload" href="https://www.w3schools.com/lib/fonts/roboto-mono-v13-latin-500.woff2" as="font"
+    type="font/woff2" crossorigin="">
+  <link rel="preload" href="https://www.w3schools.com/lib/fonts/source-sans-pro-v14-latin-700.woff2" as="font"
+    type="font/woff2" crossorigin="">
+  <link rel="preload" href="https://www.w3schools.com/lib/fonts/source-sans-pro-v14-latin-600.woff2" as="font"
+    type="font/woff2" crossorigin="">
+  <link rel="preload" href="https://www.w3schools.com/lib/fonts/freckle-face-v9-latin-regular.woff2" as="font"
+    type="font/woff2" crossorigin="">
+  <link rel="stylesheet" href="HTML%20Classes%20-%20The%20Class%20Attribute_files/w3schools30.css">
+
+  <style>
+    .city {
+      background-color: tomato;
+      color: white;
+      padding: 10px;
+    }
+
+    .cities {
+      background-color: black;
+      color: white;
+      margin: 20px;
+      padding: 20px;
+    }
+  </style>
+  <script type="text/javascript" async="" src="HTML%20Classes%20-%20The%20Class%20Attribute_files/prebid.js"></script>
+  <script type="text/javascript" async="" src="HTML%20Classes%20-%20The%20Class%20Attribute_files/apstag.js"></script>
+  <script type="text/javascript" async="" src="HTML%20Classes%20-%20The%20Class%20Attribute_files/gpt.js"></script>
+  <script type="text/javascript" async="" src="HTML%20Classes%20-%20The%20Class%20Attribute_files/adngin.js"></script>
+  <script type="text/javascript" async="" src="HTML%20Classes%20-%20The%20Class%20Attribute_files/argus.js"></script>
+  <style type="text/css">
+    .snigel-cmp-framework .sn-inner {
+      background-color: #fffefe !important;
+    }
+
+    .snigel-cmp-framework .sn-b-def {
+      border-color: #04aa6d !important;
+      color: #04aa6d !important;
+    }
+
+    .snigel-cmp-framework .sn-b-def.sn-blue {
+      color: #ffffff !important;
+      background-color: #04aa6d !important;
+      border-color: #04aa6d !important;
+    }
+
+    .snigel-cmp-framework .sn-selector ul li {
+      color: #04aa6d !important;
+    }
+
+    .snigel-cmp-framework .sn-selector ul li:after {
+      background-color: #04aa6d !important;
+    }
+
+    .snigel-cmp-framework .sn-footer-tab .sn-privacy a {
+      color: #04aa6d !important;
+    }
+
+    .snigel-cmp-framework .sn-arrow:after,
+    .snigel-cmp-framework .sn-arrow:before {
+      background-color: #04aa6d !important;
+    }
+
+    .snigel-cmp-framework .sn-switch input:checked+span::before {
+      background-color: #04aa6d !important;
+    }
+
+    #adconsent-usp-link {
+      border: 1px solid #04aa6d !important;
+      color: #04aa6d !important;
+    }
+
+    #adconsent-usp-banner-optout input:checked+.adconsent-usp-slider {
+      background-color: #04aa6d !important;
+    }
+
+    #adconsent-usp-banner-btn {
+      color: #ffffff;
+      border: solid 1px #04aa6d !important;
+      background-color: #04aa6d !important;
+    }
+  </style>
+  <argprec0></argprec0>
+  <argprec1></argprec1>
+  <meta http-equiv="origin-trial"
+    content="AzoawhTRDevLR66Y6MROu167EDncFPBvcKOaQispTo9ouEt5LvcBjnRFqiAByRT+2cDHG1Yj4dXwpLeIhc98/gIAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjYxMjk5MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+  <meta http-equiv="origin-trial"
+    content="A6+nc62kbJgC46ypOwRsNW6RkDn2x7tgRh0wp7jb3DtFF7oEhu1hhm4rdZHZ6zXvnKZLlYcBlQUImC4d3kKihAcAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjYxMjk5MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+  <meta http-equiv="origin-trial"
+    content="A/9La288e7MDEU2ifusFnMg1C2Ij6uoa/Z/ylwJIXSsWfK37oESIPbxbt4IU86OGqDEPnNVruUiMjfKo65H/CQwAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjYxMjk5MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+  <script src="HTML%20Classes%20-%20The%20Class%20Attribute_files/pubads_impl_2022052501.js" async=""></script>
+  <script src="HTML%20Classes%20-%20The%20Class%20Attribute_files/pubcid.js"></script>
+  <script src="HTML%20Classes%20-%20The%20Class%20Attribute_files/id5-api.js"></script>
+  <link rel="preload" href="HTML%20Classes%20-%20The%20Class%20Attribute_files/integrator_002.js" as="script">
+  <script type="text/javascript" src="HTML%20Classes%20-%20The%20Class%20Attribute_files/integrator_002.js"></script>
+  <link rel="preload" href="HTML%20Classes%20-%20The%20Class%20Attribute_files/integrator.js" as="script">
+  <script type="text/javascript" src="HTML%20Classes%20-%20The%20Class%20Attribute_files/integrator.js"></script>
+  <script esp-signal="true" src="HTML%20Classes%20-%20The%20Class%20Attribute_files/esp.js"></script>
+  <script esp-signal="true" src="HTML%20Classes%20-%20The%20Class%20Attribute_files/publishertag.js"></script>
+</head>
+
+<body data-new-gr-c-s-check-loaded="8.899.0" data-gr-ext-installed="">
+  <style>
+    #darkmodemenu {
+      position: absolute;
+      top: -40px;
+      right: 16px;
+      padding: 5px 20px 10px 18px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      z-index: -1;
+      transition: top 0.2s;
+      user-select: none;
+    }
+
+    #darkmodemenu input,
+    #darkmodemenu label {
+      cursor: pointer;
+    }
+  </style>
+  <div id="pagetop" class="w3-bar w3-card-2 notranslate">
+    <style>
+      @media screen and (max-width: 1080px) {
+        .ws-hide-1080 {
+          ddddisplay: none !important;
+        }
+      }
+
+      @media screen and (max-width: 1160px) {
+        .topnavmain_video {
+          display: none !important;
+        }
+      }
+    </style>
+    <div
+      style="display: none; position: fixed; z-index: 3; right: 111px; height: 44px; background-color: rgb(40, 42, 53); text-align: right; padding-top: 9px; top: 0px;"
+      id="google_translate_element"></div>
+    <h1>HTML <span class="color_h1">class Attribute</span></h1>
+    <hr>
+    <p class="intro">The HTML <code class="w3-codespan">class</code> attribute is
+      used to specify a class for an HTML element.</p>
+    <p class="intro">Multiple HTML elements can share the same class.</p>
+    <hr>
+
+    <h2>Using The class Attribute</h2>
+    <p>The <code class="w3-codespan">class</code> attribute is often used to point
+      to a class name in a style sheet. It can also be used by a JavaScript to access and
+      manipulate elements with the specific class name.</p>
+    <p>In the following example we have three <code class="w3-codespan">&lt;div&gt;</code> elements
+      with a <code class="w3-codespan">class</code> attribute with the value of
+      "city". All of the three <code class="w3-codespan">&lt;div&gt;</code>
+      elements will be styled equally according to the <code class="w3-codespan">.city</code>
+      style definition in the head section:</p>
+
+    <div class="w3-example">
+      <h3>Example</h3>
+      <div class="w3-code notranslate htmlHigh">
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span
+            class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+          style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br>
+          .city <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+            style="color:red"><br>&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor"
+              style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> tomato<span
+                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; color<span
+              class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                style="color:black">:</span> white<span class="cssdelimitercolor"
+                style="color:black">;</span></span><br>&nbsp;
+            border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                style="color:black">:</span> 2px solid black<span class="cssdelimitercolor"
+                style="color:black">;</span></span><br>&nbsp; margin<span class="csspropertyvaluecolor"
+              style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 20px<span
+                class="cssdelimitercolor" style="color:black">;</span></span><br>
+            &nbsp; padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                style="color:black">:</span> 20px<span class="cssdelimitercolor"
+                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+            style="color:black">}</span> <br></span><span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>/head<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red">
+            class<span class="attributevaluecolor" style="color:mediumblue">="city"</span></span><span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>
+        &nbsp;
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>h2<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>London<span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>London is the capital of England.<span class="tagnamecolor"
+          style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>/div<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red">
+            class<span class="attributevaluecolor" style="color:mediumblue">="city"</span></span><span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>
+        &nbsp;
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>h2<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>Paris<span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>Paris is the capital of France.<span class="tagnamecolor"
+          style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red">
+            class<span class="attributevaluecolor" style="color:mediumblue">="city"</span></span><span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>
+        &nbsp;
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>h2<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>Tokyo<span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>Tokyo is the capital of Japan.<span class="tagnamecolor"
+          style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>
+      </div>
+    </div>
+
+    <p>In the following example we have two <code class="w3-codespan">&lt;span&gt;</code> elements
+      with a <code class="w3-codespan">class</code> attribute with the value of
+      "note". Both <code class="w3-codespan">&lt;span&gt;</code>
+      elements will be styled equally according to the <code class="w3-codespan">.note</code>
+      style definition in the head section:</p>
+    <div class="w3-example">
+      <h3>Example</h3>
+      <div class="w3-code notranslate htmlHigh">
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span
+            class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+          style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br>.note
+          <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+            style="color:red"><br>
+            &nbsp; font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                style="color:black">:</span> 120%<span class="cssdelimitercolor"
+                style="color:black">;</span></span><br>&nbsp;&nbsp;color<span class="csspropertyvaluecolor"
+              style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span
+                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+            style="color:black">}</span><br>
+        </span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+            style="color:mediumblue">&lt;</span>/style<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>My <span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>span<span class="attributecolor" style="color:red">
+            class<span class="attributevaluecolor" style="color:mediumblue">="note"</span></span><span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>Important<span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/span<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span> Heading<span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>This is some <span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>span<span class="attributecolor" style="color:red">
+            class<span class="attributevaluecolor" style="color:mediumblue">="note"</span></span><span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>important<span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/span<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span> text.<span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+            class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor"
+            style="color:mediumblue">&gt;</span></span>
+      </div>
+
+      <div class="w3-panel w3-note">
+        <p><strong>Tip:</strong> The <code class="w3-codespan">class</code> attribute can be used on
+          <strong>any</strong> HTML element.</p>
+        <p><strong>Note:</strong> The class name is case sensitive!</p>
+        <p><strong>Tip:</strong> You can learn much more about CSS in our <a
+            href="https://www.w3schools.com/css/default.asp">CSS Tutorial</a>.</p>
+      </div>
+      <hr>
+
+      <h2>The Syntax For Class</h2>
+      <p>To create a class; write a period (.) character, followed by a
+        class name.
+        Then, define the CSS properties within curly braces {}:</p>
+      <div class="w3-example">
+        <h3>Example</h3>
+        <p>Create a class named "city":</p>
+        <div class="w3-code notranslate htmlHigh">
+          <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+              style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red">
+              html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span
+            class="tagnamecolor" style="color:brown"><span class="tagcolor"
+              style="color:mediumblue">&lt;</span>html<span class="tagcolor"
+              style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+              class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor"
+              style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+              class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor"
+              style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br>.city
+            <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+              style="color:red"><br>&nbsp;
+              background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                  class="cssdelimitercolor" style="color:black">:</span> tomato<span class="cssdelimitercolor"
+                  style="color:black">;</span></span><br>&nbsp; color<span class="csspropertyvaluecolor"
+                style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> white<span
+                  class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; padding<span
+                class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                  style="color:black">:</span> 10px<span class="cssdelimitercolor"
+                  style="color:black">;</span></span><br>
+            </span><span class="cssdelimitercolor" style="color:black">}</span><br></span><span class="tagnamecolor"
+            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor"
+              style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+              class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor"
+              style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+              class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor"
+              style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
+              class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="attributecolor" style="color:red">
+              class<span class="attributevaluecolor" style="color:mediumblue">="city"</span></span><span
+              class="tagcolor" style="color:mediumblue">&gt;</span></span>London<span class="tagnamecolor"
+            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
+              style="color:mediumblue">&gt;</span></span><br>
+          <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+              style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+              style="color:mediumblue">&gt;</span></span>London is the capital of England.<span class="tagnamecolor"
+            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+              style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
+              class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="attributecolor" style="color:red">
+              class<span class="attributevaluecolor" style="color:mediumblue">="city"</span></span><span
+              class="tagcolor" style="color:mediumblue">&gt;</span></span>Paris<span class="tagnamecolor"
+            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
+              style="color:mediumblue">&gt;</span></span><br>
+          <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+              style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+              style="color:mediumblue">&gt;</span></span>Paris is the capital of France.<span class="tagnamecolor"
+            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+              style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
+              class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="attributecolor" style="color:red">
+              class<span class="attributevaluecolor" style="color:mediumblue">="city"</span></span><span
+              class="tagcolor" style="color:mediumblue">&gt;</span></span>Tokyo<span class="tagnamecolor"
+            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
+              style="color:mediumblue">&gt;</span></span><br>
+          <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+              style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+              style="color:mediumblue">&gt;</span></span>Tokyo is the capital of Japan.<span class="tagnamecolor"
+            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+              style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
+              class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
+              style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+              class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor"
+              style="color:mediumblue">&gt;</span></span><br>
+        </div>
+
+      </div>
+      <hr>
+
+      <h2>Multiple Classes</h2>
+      <p>HTML elements can belong to more than one class.</p>
+      <p>To define multiple classes, separate the class names with a space, e.g. &lt;div
+        class="city main"&gt;. The element will be styled according to all the
+        classes specified.</p>
+      <p>In the following example, the first <code class="w3-codespan">&lt;h2&gt;</code> element belongs to both the
+        <code class="w3-codespan">
+city</code> class and also to the <code class="w3-codespan">main</code> class,
+        and will get the CSS styles from both of the classes:&nbsp;</p>
+
+      <div class="w3-example">
+        <h3>Example</h3>
+        <div class="w3-code notranslate htmlHigh">
+          <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+              style="color:mediumblue">&lt;</span>h2<span class="attributecolor" style="color:red">
+              class<span class="attributevaluecolor" style="color:mediumblue">="city main"</span></span><span
+              class="tagcolor" style="color:mediumblue">&gt;</span></span>London<span class="tagnamecolor"
+            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
+              style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+              class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="attributecolor" style="color:red">
+              class<span class="attributevaluecolor" style="color:mediumblue">="city"</span></span><span
+              class="tagcolor" style="color:mediumblue">&gt;</span></span>Paris<span class="tagnamecolor"
+            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
+              style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+              class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="attributecolor" style="color:red">
+              class<span class="attributevaluecolor" style="color:mediumblue">="city"</span></span><span
+              class="tagcolor" style="color:mediumblue">&gt;</span></span>Tokyo<span class="tagnamecolor"
+            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
+              style="color:mediumblue">&gt;</span></span><br>
+        </div>
+
+      </div>
+      <hr>
+
+      <h2>Different Elements Can Share Same Class</h2>
+      <p>Different HTML elements can point to the same class name.</p>
+      <p>In the following example, both <code class="w3-codespan">&lt;h2&gt;</code> and <code
+          class="w3-codespan">&lt;p&gt;</code>
+        points to the "city" class
+        and will share the same style:</p>
+
+      <div class="w3-example">
+        <h3>Example</h3>
+        <div class="w3-code notranslate htmlHigh">
+          <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+              style="color:mediumblue">&lt;</span>h2<span class="attributecolor" style="color:red"> class<span
+                class="attributevaluecolor" style="color:mediumblue">="city"</span></span><span class="tagcolor"
+              style="color:mediumblue">&gt;</span></span>Paris<span class="tagnamecolor" style="color:brown"><span
+              class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
+              style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+              class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="attributecolor" style="color:red">
+              class<span class="attributevaluecolor" style="color:mediumblue">="city"</span></span><span
+              class="tagcolor" style="color:mediumblue">&gt;</span></span>Paris is the capital of France<span
+            class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span
+              class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+        </div>
+      </div>
+      <hr>
+
+      <h2>Use of The class Attribute in JavaScript</h2>
+      <p>The class name can also be used by JavaScript to perform certain tasks for
+        specific elements.</p>
+      <p>JavaScript can access elements with a specific class name with the <code
+          class="w3-codespan">getElementsByClassName()</code> method:</p>
+
+      <div class="w3-example">
+        <h3>Example</h3>
+        <p>Click on a button to hide all elements with the class name
+          "city":</p>
+        <div class="w3-code notranslate htmlHigh">
+          <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+              style="color:mediumblue">&lt;</span>script<span class="tagcolor"
+              style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br><span
+              class="jskeywordcolor" style="color:mediumblue">function</span> myFunction() {<br>&nbsp; <span
+              class="jskeywordcolor" style="color:mediumblue">var</span> x = <strong>document.<span
+                class="jspropertycolor" style="color:black">getElementsByClassName</span>(<span class="jsstringcolor"
+                style="color:brown">"city"</span>)</strong>;<br>&nbsp; <span class="jskeywordcolor"
+              style="color:mediumblue">for</span> (<span class="jskeywordcolor" style="color:mediumblue">var</span> i =
+            <span class="jsnumbercolor" style="color:red">0</span>; i &lt; x.<span class="jspropertycolor"
+              style="color:black">length</span>; <span class="jsnumbercolor" style="color:red">
+            </span> i++) {<br>&nbsp;&nbsp;&nbsp; x[i].<span class="jspropertycolor"
+              style="color:black">style</span>.<span class="jspropertycolor" style="color:black">display</span> = <span
+              class="jsstringcolor" style="color:brown">"none"</span>;<br>&nbsp; }<br>}<br></span><span
+            class="tagnamecolor" style="color:brown"><span class="tagcolor"
+              style="color:mediumblue">&lt;</span>/script<span class="tagcolor"
+              style="color:mediumblue">&gt;</span></span>
+        </div>
+      </div>
+      <div class="w3-note w3-panel">
+        <p>Don't worry if you don't understand the code in the example above.</p>
+        <p>You will learn more about JavaScript in our <a href="https://www.w3schools.com/html/html_scripts.asp">HTML
+            JavaScript</a> chapter, or you can study our
+          <a href="https://www.w3schools.com/js/default.asp">JavaScript Tutorial</a>.
+        </p>
+      </div>
+      <hr>
+
+      <h2>Chapter Summary</h2>
+      <ul>
+        <li>The HTML <code class="w3-codespan">class</code> attribute specifies one or
+          more class names for an element</li>
+        <li>Classes are used by CSS and JavaScript to select and access specific
+          elements</li>
+        <li>The <code class="w3-codespan">class</code> attribute can be used on any
+          HTML element</li>
+        <li>The class name is case sensitive</li>
+        <li>Different HTML elements can point to the same class name</li>
+        <li>JavaScript can access elements with a specific class name with the <code
+            class="w3-codespan">getElementsByClassName()</code>
+          method</li>
+      </ul>
+      <hr>
+    </div>
+  </div>
+</body>
+
+</html>
